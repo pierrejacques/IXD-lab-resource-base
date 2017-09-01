@@ -5,6 +5,7 @@
     <h2>This server is build for speeding up web resource loading from other servers</h2>
     <a @click.prevent="$router.push({ name: 'Content' })">see the resource list</a>
     <a @click.prevent="$router.push({ name: 'Upload' })" disable>upload resources</a>
+    <a class="iconfont icon-github" href="https://github.com/pierrejacques/IXD-lab-resource-base" target="_blank"></a>
     </div>
   </div>
 </template>
@@ -40,5 +41,12 @@ a {
     pointer-events: none;
     filter: grayscale();
     cursor: none;
+  }
+  .icon-github {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2em;
+    color: #2c3e50;
   }
 </style>

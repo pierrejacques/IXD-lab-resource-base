@@ -3,7 +3,7 @@
     <ul class="column" v-for="(col, layer) in content">
       <div v-for="(item, idx) in col">
         <file v-if="typeof item === 'string'" :str="item"></file>
-        <li v-else class="folder" :class="{selected:selected[layer] === idx}" @click="unfold(layer, idx)"> + {{item.folder}}</li>
+        <li v-else class="folder" :class="{selected:selected[layer] === idx}" @click="unfold(layer, idx)"><i class="iconfont icon-folder"></i> {{item.folder}}</li>
       </div>
     </ul>
     <div class="banner">
