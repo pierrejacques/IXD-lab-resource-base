@@ -4,7 +4,7 @@
     <h1>Welcome to the IXD-lab "Resource Base" Server</h1>
     <h2>This server is build for speeding up web resource loading from other servers</h2>
     <a @click.prevent="$router.push({ name: 'Content' })">see the resource list</a>
-    <a @click.prevent="$router.push({ name: 'Upload' })">upload resources</a>
+    <a @click.prevent="$router.push({ name: 'Upload' })" disable>upload resources</a>
     </div>
   </div>
 </template>
@@ -16,9 +16,9 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
   .hello {
-    height: 70vh;
+    height: 80vh;
     display: flex;
   }
   .content-wrapper {
@@ -35,5 +35,10 @@ a {
 }
   a:hover {
     text-decoration: underline;
+  }
+  a[disable] {
+    pointer-events: none;
+    filter: grayscale();
+    cursor: none;
   }
 </style>
