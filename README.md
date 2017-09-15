@@ -4,4 +4,4 @@
 
 ## Visit
 
-> [IXD resource base](http://idx.sjtu.edu.cn:8081/#/)
+> [IXD resource base](http://ixd.sjtu.edu.cn:8081/#/)
