@@ -4,4 +4,4 @@
 
 ## Visit
 
-> [IXD resource base](http://202.120.43.16:8081/#/)
+> [IXD resource base](http://idx.sjtu.edu.cn:8081/#/)
